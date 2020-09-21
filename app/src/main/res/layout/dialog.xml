@@ -27,7 +27,8 @@
         android:textSize="18sp"
         android:textStyle="italic"
         tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="240dp" />
+        tools:layout_editor_absoluteY="240dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button29"
@@ -37,5 +38,6 @@
         android:textSize="18sp"
         android:textStyle="italic"
         tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="240dp" />
+        tools:layout_editor_absoluteY="240dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
