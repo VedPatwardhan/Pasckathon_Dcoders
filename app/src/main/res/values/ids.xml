@@ -6,4 +6,7 @@
     <item name="help" type="id">hep</item>
     <item name="contact" type="id">cnt</item>
     <item name="calender" type="id">clndr</item>
+    <item name="tracker" type="id">trs</item>
+    <item name="backHomeTracker" type="id">hometrac</item>
+    <item name="notification" type="id">notify</item>
 </resources>

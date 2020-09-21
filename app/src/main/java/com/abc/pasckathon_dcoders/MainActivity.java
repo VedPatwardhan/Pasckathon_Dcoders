@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     Button helpButton;
     Button historyButton;
     Button settingButton;
-
+    Button trackerButton;
+    Button notificationButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         helpButton=(Button)findViewById(R.id.help);
         historyButton=(Button)findViewById(R.id.history);
         settingButton=(Button)findViewById(R.id.setting);
+        trackerButton = (Button) findViewById(R.id.tracker);
+        notificationButton=(Button)findViewById(R.id.notification);
         profileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +65,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         settingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_setting=new Intent(MainActivity.this, SettingActivity.class);
+                startActivity(intent_setting);
+            }
+        });
+        trackerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_setting=new Intent(MainActivity.this, SettingActivity.class);
+                startActivity(intent_setting);
+            }
+        });
+        notificationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent_setting=new Intent(MainActivity.this, SettingActivity.class);
