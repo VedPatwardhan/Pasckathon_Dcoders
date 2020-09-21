@@ -13,7 +13,7 @@ public class HistoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.history);
-
+        getSupportActionBar().setTitle("HISTORY");
         backHomeHistory=(Button)findViewById(R.id.backHomeHistory);
         backHomeHistory.setOnClickListener(new View.OnClickListener() {
             @Override

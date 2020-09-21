@@ -13,7 +13,7 @@ public class CalendarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contact);
-
+        getSupportActionBar().setTitle("CALENDER");
         backHomeCalendar=(Button)findViewById(R.id.backHomeCalendar);
         backHomeCalendar.setOnClickListener(new View.OnClickListener() {
             @Override

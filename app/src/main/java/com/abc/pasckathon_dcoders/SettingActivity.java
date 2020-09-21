@@ -13,7 +13,7 @@ public class SettingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setting);
-
+        getSupportActionBar().setTitle("SETTING");
         backHomeSetting=(Button)findViewById(R.id.backHomeSetting);
         backHomeSetting.setOnClickListener(new View.OnClickListener() {
             @Override

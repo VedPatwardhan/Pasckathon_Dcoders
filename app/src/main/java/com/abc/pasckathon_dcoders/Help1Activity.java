@@ -14,7 +14,7 @@ public class Help1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.help1);
-
+        getSupportActionBar().setTitle("HELP1");
         backHomeHelp1=(Button)findViewById(R.id.backHomeHelp1);
         backToHelp=(Button)findViewById(R.id.backToHelp);
         backHomeHelp1.setOnClickListener(new View.OnClickListener() {

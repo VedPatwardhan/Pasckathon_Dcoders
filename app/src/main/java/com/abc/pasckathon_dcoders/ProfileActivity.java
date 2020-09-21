@@ -14,7 +14,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
-
+        getSupportActionBar().setTitle("PROFILE");
         backHomeProfile=(Button)findViewById(R.id.backHomeProfile);
         backHomeProfile.setOnClickListener(new View.OnClickListener() {
             @Override

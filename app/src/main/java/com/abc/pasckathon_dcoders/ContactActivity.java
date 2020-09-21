@@ -14,7 +14,7 @@ public class ContactActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contact);
-
+        getSupportActionBar().setTitle("CONTACT");
         backHomeContact=(Button)findViewById(R.id.backHomeContact);
         backHomeContact.setOnClickListener(new View.OnClickListener() {
             @Override
