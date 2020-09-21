@@ -128,4 +128,12 @@
         tools:layout_editor_absoluteX="189dp"
         tools:layout_editor_absoluteY="666dp"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/backHomeProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to home"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="45dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

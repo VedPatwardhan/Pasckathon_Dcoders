@@ -28,4 +28,20 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="195dp"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/backHomeHelp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to home"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <Button
+        android:id="@+id/backToHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Help"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="568dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
