@@ -132,4 +132,12 @@
         tools:layout_editor_absoluteY="484dp"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/backHomeContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="240dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
