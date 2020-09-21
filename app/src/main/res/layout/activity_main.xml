@@ -6,140 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="132dp"
+        android:layout_height="101dp"
+        android:text="Profile"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="88dp"
+        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="410dp"
-        android:layout_height="593dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="132dp"
+        android:layout_height="101dp"
+        android:text="notification"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="88dp"
+        tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="132dp"
+        android:layout_height="101dp"
+        android:text="history"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="222dp"
+        tools:ignore="MissingConstraints" />
 
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="375dp"
-        android:layout_height="445dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.607">
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="132dp"
+        android:layout_height="101dp"
+        android:text="calender"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="222dp"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawingCacheQuality="auto"
-            android:fallbackLineSpacing="true"
-            android:includeFontPadding="true"
-            android:maxWidth="50dip"
-            android:minWidth="88dip"
-            android:minHeight="40dip"
-            android:text="PROFILE"
-            android:textStyle="bold"
-            app:layout_column="0"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_row="0"
-            app:layout_rowWeight="1" />
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="132dp"
+        android:layout_height="101dp"
+        android:text="trackers"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="350dp"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/notification"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawablePadding="1dp"
-            android:fallbackLineSpacing="true"
-            android:includeFontPadding="true"
-            android:text="NOTIFICATION"
-            android:textStyle="bold"
-            app:layout_column="2"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_row="0"
-            app:layout_rowWeight="1" />
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="132dp"
+        android:layout_height="101dp"
+        android:text="contact"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="350dp"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/calender"
-            android:layout_width="136dp"
-            android:layout_height="wrap_content"
-            android:drawablePadding="1dp"
-            android:fallbackLineSpacing="true"
-            android:includeFontPadding="true"
-            android:text="CALENDER"
-            android:textStyle="bold"
-            app:layout_column="0"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_row="1"
-            app:layout_rowWeight="1" />
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="132dp"
+        android:layout_height="101dp"
+        android:text="settings"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="494dp"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/history"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawablePadding="1dp"
-            android:fallbackLineSpacing="true"
-            android:includeFontPadding="true"
-            android:text="HISTORY"
-            android:textStyle="bold"
-            app:layout_column="2"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_row="1"
-            app:layout_rowWeight="1" />
-
-        <Button
-            android:id="@+id/contact"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawablePadding="1dp"
-            android:fallbackLineSpacing="true"
-            android:includeFontPadding="true"
-            android:text="CONTACT"
-            android:textStyle="bold"
-            app:layout_column="0"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_row="2"
-            app:layout_rowWeight="1" />
-
-        <Button
-            android:id="@+id/setting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fallbackLineSpacing="true"
-            android:includeFontPadding="false"
-            android:text="SETTING"
-            android:textStyle="bold"
-            app:layout_column="2"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_row="2"
-            app:layout_rowWeight="1" />
-
-        <Button
-            android:id="@+id/help"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawablePadding="1dp"
-            android:fallbackLineSpacing="true"
-            android:includeFontPadding="true"
-            android:text="HELP"
-            android:textStyle="bold"
-            app:layout_column="0"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_row="3"
-            app:layout_rowWeight="1" />
-
-
-    </androidx.gridlayout.widget.GridLayout>
-
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="132dp"
+        android:layout_height="101dp"
+        android:text="help"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="494dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
