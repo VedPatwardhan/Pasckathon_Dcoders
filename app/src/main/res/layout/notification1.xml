@@ -65,7 +65,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button26"
+        android:id="@+id/layout"
         android:layout_width="148dp"
         android:layout_height="55dp"
         android:text="contact Doctor"

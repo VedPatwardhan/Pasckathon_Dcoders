@@ -7,19 +7,21 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/help2"
         android:layout_width="407dp"
         android:layout_height="106dp"
+        android:layout_marginBottom="416dp"
         android:text="How to use the app"
         android:textSize="18sp"
         android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/help1"
         android:layout_width="407dp"
         android:layout_height="106dp"
         android:layout_marginTop="76dp"
@@ -27,7 +29,6 @@
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to home"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="403dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help2"
+        tools:layout_editor_absoluteX="153dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

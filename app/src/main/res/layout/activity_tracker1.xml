@@ -73,4 +73,14 @@
         tools:text="CLICK TO ORDER"
         tools:ignore="MissingConstraints"
         android:onClick="btn_showDialog1"/>
+
+    <Button
+        android:id="@+id/backHomeTracker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
