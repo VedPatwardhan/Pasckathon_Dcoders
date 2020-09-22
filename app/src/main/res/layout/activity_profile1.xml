@@ -10,10 +10,12 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="91dp"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="35dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textView"
@@ -22,8 +24,12 @@
         android:text="Name:"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="302dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -32,41 +38,44 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="302dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="174dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="133dp"
         android:layout_height="38dp"
+        android:layout_marginTop="36dp"
         android:text="Address:"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="407dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="126dp"
         android:layout_height="37dp"
+        android:layout_marginTop="36dp"
         android:text=" Mail Id:"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="518dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="179dp"
-        android:layout_height="38dp"
+        android:layout_width="143dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
         android:text="Aadhar card no.:"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="586dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -75,19 +84,20 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="586dp" />
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="158dp"
-        android:layout_height="26dp"
+        android:layout_width="132dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
         android:text="Phone No. :"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="669dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -95,9 +105,9 @@
         android:layout_width="165dp"
         android:layout_height="46dp"
         android:text="Edit Profile"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="818dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="578dp" />
 
     <EditText
         android:id="@+id/editTextTextPostalAddress"
@@ -105,8 +115,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPostalAddress"
-        tools:layout_editor_absoluteX="190dp"
-        tools:layout_editor_absoluteY="407dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -115,8 +125,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="517dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -125,20 +135,19 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="phone"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="666dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/backHomeProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="636dp"
         android:text="Back to home"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

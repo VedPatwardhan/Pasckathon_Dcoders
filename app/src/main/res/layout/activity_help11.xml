@@ -10,39 +10,49 @@
         android:id="@+id/textView6"
         android:layout_width="398dp"
         android:layout_height="84dp"
-        android:layout_marginTop="76dp"
         android:text="FAQ"
         android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="396dp"
         android:layout_height="126dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="195dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/backHomeHelp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
         android:text="Back to home"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <Button
         android:id="@+id/backToHelp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Help"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="568dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/backHomeHelp1"
+        app:layout_constraintStart_toStartOf="@+id/backHomeHelp1"
+        app:layout_constraintTop_toBottomOf="@+id/backHomeHelp1"
+        app:layout_constraintVertical_bias="0.307"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

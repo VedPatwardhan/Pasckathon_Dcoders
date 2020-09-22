@@ -10,12 +10,12 @@
         android:id="@+id/textView28"
         android:layout_width="214dp"
         android:layout_height="73dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="188dp"
         android:text="DO YOU WANT TO ORDER MEDICINE"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,21 +23,23 @@
         android:id="@+id/button28"
         android:layout_width="103dp"
         android:layout_height="49dp"
+        android:layout_marginTop="56dp"
         android:text="YES"
         android:textSize="18sp"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="240dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="98dp" />
 
     <Button
         android:id="@+id/button29"
         android:layout_width="105dp"
         android:layout_height="50dp"
+        android:layout_marginTop="56dp"
         android:text="NO"
         android:textSize="18sp"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="240dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="207dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

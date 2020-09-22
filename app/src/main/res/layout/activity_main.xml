@@ -13,11 +13,9 @@
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:text="notification"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/profile"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="188dp" />
+        app:layout_constraintTop_toTopOf="@+id/profile"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/trackers"
@@ -25,9 +23,9 @@
         android:layout_height="101dp"
         android:layout_marginTop="28dp"
         android:text="trackers"
+        app:layout_constraintStart_toStartOf="@+id/history"
         app:layout_constraintTop_toBottomOf="@+id/history"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="66dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/calendar"
@@ -37,8 +35,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:text="calender"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@+id/notification"
         app:layout_constraintStart_toEndOf="@+id/history"
         app:layout_constraintTop_toBottomOf="@+id/notification"
         tools:ignore="MissingConstraints" />
@@ -51,8 +48,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="28dp"
         android:text="contact"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@+id/calendar"
         app:layout_constraintStart_toEndOf="@+id/trackers"
         app:layout_constraintTop_toBottomOf="@+id/calendar"
         tools:ignore="MissingConstraints" />
@@ -61,10 +57,10 @@
         android:id="@+id/profile"
         android:layout_width="132dp"
         android:layout_height="101dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="144dp"
         android:text="Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -77,8 +73,8 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="28dp"
         android:text="help"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintBottom_toBottomOf="@+id/setting"
+        app:layout_constraintEnd_toEndOf="@+id/contact"
         app:layout_constraintStart_toEndOf="@+id/setting"
         app:layout_constraintTop_toBottomOf="@+id/contact"
         tools:ignore="MissingConstraints" />
@@ -89,9 +85,9 @@
         android:layout_height="101dp"
         android:layout_marginTop="28dp"
         android:text="settings"
+        app:layout_constraintStart_toStartOf="@+id/trackers"
         app:layout_constraintTop_toBottomOf="@+id/trackers"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="66dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/history"
@@ -99,9 +95,9 @@
         android:layout_height="101dp"
         android:layout_marginTop="32dp"
         android:text="history"
+        app:layout_constraintStart_toStartOf="@+id/profile"
         app:layout_constraintTop_toBottomOf="@+id/profile"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="66dp" />
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

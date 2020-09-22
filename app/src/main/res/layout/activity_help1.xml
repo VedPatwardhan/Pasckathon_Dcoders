@@ -10,27 +10,28 @@
         android:id="@+id/help2"
         android:layout_width="407dp"
         android:layout_height="106dp"
-        android:layout_marginBottom="416dp"
         android:text="How to use the app"
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
 
     <Button
         android:id="@+id/help1"
         android:layout_width="407dp"
         android:layout_height="106dp"
-        android:layout_marginTop="76dp"
         android:text="Frequently Asked Question"
         android:textSize="18sp"
         android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
 
     <Button
         android:id="@+id/backHomeHelp"
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:text="Back to home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/help2"
-        tools:layout_editor_absoluteX="153dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

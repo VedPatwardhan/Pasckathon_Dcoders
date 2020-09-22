@@ -10,11 +10,12 @@
         android:id="@+id/textView27"
         android:layout_width="175dp"
         android:layout_height="40dp"
+        android:layout_marginTop="48dp"
         android:text="TABLET NAME"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="231dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
         tools:ignore="MissingConstraints" />
 
 
@@ -22,57 +23,63 @@
         android:id="@+id/editTextNumber2"
         android:layout_width="175dp"
         android:layout_height="39dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="TABLETS LEFT"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
-        tools:layout_editor_absoluteX="40dp"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="175dp"
         android:layout_height="40dp"
+        android:layout_marginTop="160dp"
         android:text="TABLET NAME"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="175dp"
         android:layout_height="39dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="TABLETS LEFT"
         android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
         app:layout_constraintTop_toBottomOf="@+id/textView25"
-        tools:layout_editor_absoluteX="40dp"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button25"
         android:layout_width="102dp"
         android:layout_height="52dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:onClick="btn_showDialog"
         android:text="Button"
-        tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="98dp"
-        tools:text="CLICK TO ORDER MED."
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25"
         tools:ignore="MissingConstraints"
-        android:onClick="btn_showDialog"/>
+        tools:text="CLICK TO ORDER MED." />
 
     <Button
         android:id="@+id/button27"
         android:layout_width="100dp"
         android:layout_height="54dp"
+        android:onClick="btn_showDialog1"
         android:text="Button"
-        tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="253dp"
-        tools:text="CLICK TO ORDER"
+        app:layout_constraintEnd_toEndOf="@+id/button25"
+        app:layout_constraintTop_toTopOf="@+id/textView27"
         tools:ignore="MissingConstraints"
-        android:onClick="btn_showDialog1"/>
+        tools:text="CLICK TO ORDER" />
 
     <Button
         android:id="@+id/backHomeTracker"
