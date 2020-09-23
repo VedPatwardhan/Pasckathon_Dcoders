@@ -2,6 +2,7 @@ package com.abc.pasckathon_dcoders;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,10 +31,10 @@ public class MedicalDetailsActivity extends AppCompatActivity {
         severity=(SeekBar)findViewById(R.id.seekBarDisease);
         diseaseSubmit=(Button)findViewById(R.id.buttonDisease);
         disease1=disease.getSelectedItem().toString().trim();
-        severity1=severity.getProgress();
         diseaseSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                severity1=severity.getProgress();
                 if(severity1==0)
                 {
                     Toast.makeText(MedicalDetailsActivity.this, "Severity cannot be 0",Toast.LENGTH_LONG).show();
@@ -42,6 +43,8 @@ public class MedicalDetailsActivity extends AppCompatActivity {
                     MainActivity.ob1.setDiseaseStuff(disease1, severity1);
                     databasePatients.child(MainActivity.id).setValue(MainActivity.ob1);
                     Toast.makeText(MedicalDetailsActivity.this, "Your data has been saved and medicines have been prescribed",Toast.LENGTH_LONG).show();
+                    Intent intentHomeLogin = new Intent(MedicalDetailsActivity.this, MainActivity.class);
+                    startActivity(intentHomeLogin);
                 }
             }
         });

@@ -1,5 +1,6 @@
 package com.abc.pasckathon_dcoders;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -99,6 +100,55 @@ public class PatientData {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getDisease() {
+        return disease;
+    }
+
+    public void setDisease(String disease) {
+        this.disease = disease;
+    }
+
+    public int getSeverity() {
+        return severity;
+    }
+
+    public void setSeverity(int severity) {
+        this.severity = severity;
+    }
+
+    public ArrayList<String> getMedicines() {
+        return medicines;
+    }
+
+    public void setMedicines(ArrayList<String> medicines) {
+        this.medicines = medicines;
+    }
+
+    public ArrayList<Integer> getNumberPerDay() {
+        return numberPerDay;
+    }
+
+    public void setNumberPerDay(ArrayList<Integer> numberPerDay) {
+        this.numberPerDay = numberPerDay;
+    }
+
+    public HashMap<String, Integer> getToBeTaken() {
+        return toBeTaken;
+    }
+
+    public void setToBeTaken(HashMap<String, Integer> toBeTaken) {
+        this.toBeTaken = toBeTaken;
+    }
+
+    public HashMap<String, Integer> getStock() {
+        return stock;
+    }
+
+    public void setStock(HashMap<String, Integer> stock) {
+        this.stock = stock;
+    }
+
     public void setDiseaseStuff(String d, int s)
     {
         int a,b,c;
@@ -122,14 +172,14 @@ public class PatientData {
         }
         this.disease=d;
         this.severity=s;
-        medicines=MainActivity.diseaseMedicine.get(this.disease);
-        for(int i=0;i<medicines.size();i++)
+        this.medicines=MainActivity.diseaseMedicine.get(this.disease);
+        for(int i=0;i<this.medicines.size();i++)
         {
-            toBeTaken.put(medicines.get(i),numberPerDay.get(i));
+            this.toBeTaken.put(medicines.get(i),numberPerDay.get(i));
         }
         for(int i=0;i<medicines.size();i++)
         {
-            stock.put(medicines.get(i),numberPerDay.get(i)*14);
+            this.stock.put(medicines.get(i),numberPerDay.get(i)*14);
         }
     }
 }

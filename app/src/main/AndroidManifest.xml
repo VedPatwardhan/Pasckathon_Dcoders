@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SetYourRemindersActivity"></activity>
+        <activity android:name=".AcceptDeclineActivity"></activity>
+
+        <service
+            android:name=".java.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <activity android:name=".MedicalDetailsActivity" />
         <activity android:name=".SignUpActivity2" />
         <activity android:name=".SignUpActivity" />

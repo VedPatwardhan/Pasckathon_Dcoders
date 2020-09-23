@@ -2,6 +2,8 @@ package com.abc.pasckathon_dcoders;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +13,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -71,6 +74,17 @@ public class MainActivity extends AppCompatActivity {
         allMedicines.addAll(asthma);
         allMedicines.addAll(kidneyRelated);
         allMedicines.addAll(BP);
+
+        AlarmManager alarmManager=(AlarmManager)getSystemService(ALARM_SERVICE);
+
+        Calendar calendar= Calendar.getInstance();
+        calendar.add(Calendar.MILLISECOND, 5);
+
+        Intent intent=new Intent(MainActivity.this, AlarmReceiver.class);
+        PendingIntent broadcast=PendingIntent.getService(MainActivity.this, 100, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        assert alarmManager != null;
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), broadcast);
+
 // To create the database
 //        databaseShops= FirebaseDatabase.getInstance().getReference("Shops");
 //        shop_id=databaseShops.push().getKey();

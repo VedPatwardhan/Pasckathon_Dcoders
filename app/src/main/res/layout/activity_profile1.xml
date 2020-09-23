@@ -34,14 +34,16 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/NameProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="174dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
@@ -85,6 +87,8 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintTop_toTopOf="@+id/textView4"
         tools:ignore="MissingConstraints" />
@@ -112,22 +116,13 @@
         tools:layout_editor_absoluteX="123dp" />
 
     <EditText
-        android:id="@+id/editTextTextPostalAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine3"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine3"
         app:layout_constraintTop_toTopOf="@+id/textView3"
         tools:ignore="MissingConstraints" />
 
@@ -137,7 +132,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="phone"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintTop_toTopOf="@+id/textView5"
         tools:ignore="MissingConstraints" />
 
@@ -153,4 +149,14 @@
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.132"
         tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine3"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/NameProfile"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
