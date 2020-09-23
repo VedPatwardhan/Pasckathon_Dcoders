@@ -57,10 +57,10 @@
         android:id="@+id/profile"
         android:layout_width="132dp"
         android:layout_height="101dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="84dp"
         android:text="Profile"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.215"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />

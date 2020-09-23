@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "355756567952",
+    "firebase_url": "https://patient-database-6cc32.firebaseio.com",
+    "project_id": "patient-database-6cc32",
+    "storage_bucket": "patient-database-6cc32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355756567952:android:fa09fcc18edf450071d715",
+        "android_client_info": {
+          "package_name": "com.abc.pasckathon_dcoders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355756567952-mrp2tv01619s2soiggn5mtrc6ah2bo0n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abc.pasckathon_dcoders",
+            "certificate_hash": "95f1ae5ac4783877accb80a03e5645990050a7e0"
+          }
+        },
+        {
+          "client_id": "355756567952-0km0m54bhnos509qt1tds4kp2dog9rbi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc9Ad9AD3gO0I9UQfase5GUBQGx_i7DVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355756567952-0km0m54bhnos509qt1tds4kp2dog9rbi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

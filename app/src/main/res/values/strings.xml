@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Pasckathon_Dcoders</string>
+    <string-array name="diseases">
+        <item>Diabetes</item>
+        <item>Asthma</item>
+        <item>High Blood Pressure</item>
+        <item>Kidney-related disease</item>
+    </string-array>
+    <string-array name="pune_regions">
+        <item>Bibvewadi</item>
+        <item>Katraj</item>
+        <item>Swargate</item>
+        <item>Shivaji Nagar</item>
+        <item>Hadapsar</item>
+        <item>Viman Nagar</item>
+        <item>Koregaon Park</item>
+        <item>Tilak Road</item>
+        <item>Laxmi Road</item>
+        <item>Sarasbaug</item>
+        <item>Warje</item>
+        <item>Kothrud</item>
+        <item>Market Yard</item>
+        <item>Somwar Peth</item>
+        <item>Budhwar Peth</item>
+        <item>Guruwar Peth</item>
+        <item>Shukrawar Peth</item>
+        <item>Shaniwar Peth</item>
+        <item>Raviwar Peth</item>
+        <item>Appar</item>
+        <item>Kondhwa</item>
+        <item>NIBM Road</item>
+        <item>Undri</item>
+    </string-array>
 </resources>
