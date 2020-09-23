@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity2">
+    tools:context=".SignUpActivity2"
+    android:background="@drawable/bckimage">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="412dp"
+        android:layout_height="606dp"
+        android:background="#70FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-3dp" />
 
     <ScrollView
         android:id="@+id/scrollView"
