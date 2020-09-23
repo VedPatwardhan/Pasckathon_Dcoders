@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    static boolean loggedIn=false;
+    //static boolean loggedIn=false;
     Button profileButton;
     Button calendarButton;
     Button contactButton;
@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(!loggedIn) {
-            Intent intent_login = new Intent(MainActivity.this, LoginActivity1.class);
-            startActivity(intent_login);
-        }
+        //if(!loggedIn) {
+           // Intent intent_login = new Intent(MainActivity.this, LoginActivity1.class);
+            //startActivity(intent_login);
+        //}
         setContentView(R.layout.activity_main);
         profileButton=(Button)findViewById(R.id.profile);
         calendarButton=(Button)findViewById(R.id.calendar);

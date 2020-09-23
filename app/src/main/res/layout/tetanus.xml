@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="389dp"
+        android:layout_height="563dp"
+        android:text="Tetanus symptoms include: •	Jaw cramping. •	Sudden, involuntary muscle tightening (muscle spasms) – often in the stomach. •	Painful muscle stiffness all over the body. •	Trouble swallowing. •	Jerking or staring (seizures) •	Headache. •	Fever and sweating. •	Changes in blood pressure and fast heart rate. Foods to be taken •	Liquid foods •	Stimulants •	Foods rich in magnesium •	High protein diet  Foods to be avoided •	Junk food   Causes •	bactrial infection   Home remedies •	Garlic is rich in anti-inflammatory properties which help in reducing pain, mustard increases blood circulation in the affected area. All you need to do is boil some garlic cloves in mustard oil. Use this oil to massage for 2 to 3 times a day. •	Wrap ice cubes with a towel. Gently apply on the jaw for 10 minutes to relieve stiffness. Do this three times a day until condition improves. •	Eat a healthy diet, keep yourself well hydrated. •	Breathing support with oxygen, a breathing tube, and a breathing machine may be necessary "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="367dp"
+        android:layout_height="584dp"
+        android:text="symptoms •	Urinating often. •	increased hunger •	Feeling very thirsty. •	blurry vision •	Feeling very hungry—even though you are eating. •	Extreme fatigue. •	Blurry vision. •	Cuts/bruises that are slow to heal. •	Weight loss—even though you are eating more •	Tingling, pain, or numbness in the hands/feet  Foods to Avoid •	Sugar-Sweetened Beverages. Sugary beverages are the worst drink choice for someone with diabetes. •	Trans Fats.   •	White Bread, Pasta and Rice. •	Fruit-Flavored Yogurt. •	Sweetened Breakfast Cereals. •	Flavored Coffee Drinks. •	Honey, Agave Nectar and Maple Syrup. •	Dried Fruit.  Foods to take •	Fatty Fish. Some people consider fatty fish to be one of the healthiest foods on the planet. •	Leafy Greens. Leafy green vegetables are extremely nutritious and low in calories. •	Avocados •	Eggs •	Chia Seeds •	Beans •	Greek Yogurt •	Nuts. •	Broccoli •	extra-virgin olive oil •	Flaxseeds •	apple cider vinegar •	strawberries •	garlic •	Squash •	Shirataki noodles "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="386dp"
+        android:layout_height="568dp"
+        android:text="symptoms •	Fever. •	Chills. •	Abdominal pain. •	Flu-like symptoms. •	Dark-colored urine and/or clay-colored stool •	Yellow skin •	Whites of the eyes appear yellow •	Pruritus and mild to severe itching •	Nausea and fever accompanied by loss of weight  food to take •	buttermilk •	clear juices •	dal water •	coconot water •	chicken •	herbal tea or coffee •	proyine rich food •	high fibre food •	vitamins •	fruits •	vegetables •	honey •	yoghurt •	milk thistle   food to avoid •	alcohol •	fatty and fried foods •	refined sugares and carbohydrates •	refined sugures and carbohydrats •	seafood •	red meat •	canned food •	salt and excessive iron  "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

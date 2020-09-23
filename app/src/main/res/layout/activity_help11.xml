@@ -4,13 +4,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bckimage">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="412dp"
+        android:layout_height="606dp"
+        android:background="#70FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-3dp" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="398dp"
-        android:layout_height="84dp"
+        android:layout_width="374dp"
+        android:layout_height="81dp"
         android:text="FAQ"
+        android:textColor="#000000"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,8 +32,8 @@
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="396dp"
-        android:layout_height="126dp"
+        android:layout_width="374dp"
+        android:layout_height="125dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:gravity="start|top"
@@ -35,24 +46,27 @@
 
     <Button
         android:id="@+id/backHomeHelp1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_width="108dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/custom_button2"
         android:text="Back to home"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <Button
         android:id="@+id/backToHelp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_button"
         android:text="Back to Help"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/backHomeHelp1"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="@+id/backHomeHelp1"
         app:layout_constraintTop_toBottomOf="@+id/backHomeHelp1"
-        app:layout_constraintVertical_bias="0.307"
+        app:layout_constraintVertical_bias="0.324"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
